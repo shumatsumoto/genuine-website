@@ -117,3 +117,45 @@ whatAnimation
   )
   .add(splitAndAnimate(".what .container .text h2", 0.04), "<")
   .add(splitAndAnimate(".what .container .text .sentence", 0.01), "<=0.15");
+
+// .worksアニメーション
+
+const worksAnimation = gsap.timeline({
+  ScrollTrigger: {
+    trigger: ".works",
+    start: "top 60%",
+  },
+});
+
+worksAnimation
+  .from(".works .bg", {
+    autoAlpha: 0,
+    filter: "blur(30px)",
+    x: 100,
+    y: 100,
+  })
+  .from(
+    ".works .title h3",
+    {
+      autoAlpha: 0,
+      y: -50,
+    },
+    "<=1.5"
+  )
+  .from(
+    ".works .title h2",
+    {
+      autoAlpha: 0,
+      y: 50,
+    },
+    "<=1.1"
+  )
+  .from(
+    ".works .splide",
+    {
+      autoAlpha: 0,
+      y: 100,
+      duration: 1.5,
+    },
+    "<=1"
+  );
