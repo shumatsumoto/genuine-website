@@ -1,0 +1,250 @@
+@charset "utf-8";
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 FLOW 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .flow{
+        padding: 60px 0 60px 0;
+        .container{
+            .title{
+                h3{
+                    .catch{
+                        line-height: 1.0;
+                        letter-spacing: 10px;
+                        font-size: 77px;
+                    }
+                }
+                h2{
+                    margin: 10px 0 0 0;
+                    .catch{
+                        line-height: 1.25;
+                        font-size: 24px;
+                    }
+                }
+            }
+            .box-wrapper{
+                max-width: 94%;
+                margin: 0 auto 0;
+                padding: 20px 0 0 0;
+                .box{
+                    margin: 50px 0 0 0;
+                    .inner{
+                        padding: 5px 30px 25px 30px;
+                        display: block;
+                        .number{
+                            width: 7vw;
+                            height: 7vw;
+                            margin:-20px auto 0;
+                            p{
+                                &.sub{
+                                    line-height: 1.2;
+                                    font-size:1.85vw;
+                                }
+                                &.main{
+                                    line-height: 1.2;
+                                    font-size:2.5vw;
+                                }
+                            }
+                        }
+                        .text{
+                            width: calc(100% - 0%);
+                            padding: 20px 0 0 0px;
+                            h3{
+                                .catch{
+                                    font-size: 24px;
+                                    text-align: center;
+                                }
+                            }
+                            .sentence{
+                                margin: 5px 0 0 0;
+                                p{
+                                    line-height: 1.8;
+                                    padding: 10px 0 10px 0;
+                                    font-size: 1.8vw;
+                                }
+                            }
+                        }
+                    }
+                }
+                .arrow{
+                    width: 5%;
+                    margin: 0px auto 0px;
+                }
+            }
+        }
+    }
+} /* 1024px～1280px responsive-close
+
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .flow{
+        padding: 60px 0 60px 0;
+        .container{
+            .title{
+                h3{
+                    .catch{
+                        line-height: 1.0;
+                        letter-spacing: 10px;
+                        font-size: 77px;
+                    }
+                }
+                h2{
+                    margin: 10px 0 0 0;
+                    .catch{
+                        line-height: 1.25;
+                        font-size: 24px;
+                    }
+                }
+            }
+            .box-wrapper{
+                max-width: 94%;
+                margin: 0 auto 0;
+                padding: 10px 0 0 0;
+                .box{
+                    margin: 50px auto 0;
+                    .inner{
+                        padding: 5px 25px 25px 25px;
+                        display: block;
+                        .number{
+                            width: 8vw;
+                            height: 8vw;
+                            margin: -20px auto 0;
+                            p{
+                                &.sub{
+                                    line-height: 1.2;
+                                    font-size:2vw;
+                                }
+                                &.main{
+                                    line-height: 1.2;
+                                    font-size:2.5vw;
+                                }
+                            }
+                        }
+                        .text{
+                            width: calc(100% - 0vw);
+                            padding: 20px 0 0 0px;
+                            h3{
+                                .catch{
+                                    font-size: 3.15vw;
+                                    text-align: center;
+                                }
+                            }
+                            .sentence{
+                                margin: 1px 0 0 0;
+                                p{
+                                    line-height: 1.8;
+                                    padding: 10px 0 10px 0;
+                                    font-size: 1.8vw;
+                                }
+                            }
+                        }
+                    }
+                }
+                .arrow{
+                    width: 5%;
+                    margin: 0px auto 0px;
+                }
+            }
+        }
+    }
+} /* 768px～1023px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+    .flow{
+        padding: 60px 0 60px 0;
+        .container{
+            .box-wrapper{
+                max-width: 94%;
+                margin: 0 auto 0;
+                display: block;
+                .box{  
+                    margin: 0px auto 0;
+                    width: 100%;
+                    .inner{
+                        display: block;
+                        padding: 30px 20px 30px 20px;
+                        .number{
+                            width: 20vw;
+                            height: 20vw;
+                            top:-20px;
+                            p{
+                                &.sub{
+                                    line-height: 1.2;
+                                    font-size:4vw;
+                                }
+                                &.main{
+                                    line-height: 1.2;
+                                    font-size:6vw;
+                                }
+                            }
+                        }
+                        .text{
+                            width: 100%;
+                            padding: 20px 0 0 0;
+                            h3{
+                                .catch{
+                                    font-size: 6vw;
+                                }
+                            }
+                            .sentence{
+                                margin: 10px 0 0 0;
+                                p{
+                                    line-height: 1.8;
+                                    padding: 10px 0 10px 0;
+                                    font-size: 4vw;
+                                }
+                            }
+                        }
+                    }
+                }
+                .arrow{
+                    width: 30vw;
+                    margin: 30px auto 30px;
+                    img{
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+        }
+    }
+    
+} /* 767px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+

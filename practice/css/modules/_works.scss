@@ -1,0 +1,279 @@
+@charset "utf-8";
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 WORKS 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .works {
+        .bg {
+            left: 0;
+            top: 0;
+        }
+        .title {
+            padding: 60px 0 60px 0;
+            h3 {
+                .catch {
+                    line-height: 1.25;
+                    letter-spacing: 5px;
+                    font-size: 80px;
+                }
+            }
+            h2 {
+                margin: 5px 0 0 0;
+                .catch {
+                    letter-spacing: 4px;
+                    font-size: 28px;
+                }
+            }
+        }
+        .container {
+            width: 96%;
+            max-width: 1480px;
+            margin: 40px auto 0;
+            padding: 0 0 70px 0;
+            .splide {
+                .splide__track {
+                    .splide__list {
+                        .splide__slide {
+                            width: 50%;
+                            .thumb {
+                                line-height: 0;
+                                width: 100%;
+                                height: 400px;
+                                img {
+                                    object-fit: cover;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            .text {
+                                padding: 30px 30px 30px 30px;
+                                .category {
+                                    p {
+                                        letter-spacing: 4px;
+                                        font-size: 24px;
+                                    }
+                                    h3 {
+                                        .catch {
+                                            font-size: 21px;
+                                        }
+                                    }
+                                    h4 {
+                                        .catch {
+                                            font-size: 19px;
+                                        }
+                                    }
+                                }
+                            }
+
+
+                            &.is-active {
+                                padding: 0 0 0 0;
+                            }
+                        }
+                    }
+                    .splide__progress__bar {
+                        height: 3px;
+                    }
+                }
+            }
+        }
+    }
+} /* 1024px～1280px responsive-close
+
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .works {
+        .bg {
+            left: 0;
+            top: 0;
+        }
+        .title {
+            padding: 60px 0 60px 0;
+            h3 {
+                .catch {
+                    line-height: 1.25;
+                    letter-spacing: 5px;
+                    font-size: 80px;
+                }
+            }
+            h2 {
+                margin: 5px 0 0 0;
+                .catch {
+                    letter-spacing: 4px;
+                    font-size: 28px;
+                }
+            }
+        }
+        .container {
+            width: 96%;
+            max-width: 1480px;
+            margin: 40px auto 0;
+            padding: 0 0 70px 0;
+            .splide {
+                .splide__track {
+                    .splide__list {
+                        .splide__slide {
+                            width: 50%;
+                            .thumb {
+                                line-height: 0;
+                                width: 100%;
+                                height: 300px;
+                                img {
+                                    object-fit: cover;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            .text {
+                                padding: 30px 20px 30px 20px;
+                                .category {
+                                    p {
+                                        letter-spacing: 4px;
+                                        font-size: 22px;
+                                    }
+                                    h3 {
+                                        .catch {
+                                            font-size: 19px;
+                                        }
+                                    }
+                                    h4 {
+                                        .catch {
+                                            font-size: 17px;
+                                        }
+                                    }
+                                }
+                            }
+
+
+                            &.is-active {
+                                padding: 0 0 0 0;
+                            }
+                        }
+                    }
+                    .splide__progress__bar {
+                        height: 3px;
+                    }
+                }
+            }
+        }
+    }
+} /* 768px～1023px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+    .works {
+        .bg {
+            left: 0;
+            top: 0;
+        }
+        .title {
+            padding: 60px 0 60px 0;
+            h3 {
+                .catch {
+                    line-height: 1.25;
+                    letter-spacing: 2px;
+                    font-size: 10vw;
+                }
+            }
+            h2 {
+                margin: 5px 0 0 0;
+                .catch {
+                    letter-spacing: 4px;
+                    font-size: 6vw;
+                }
+            }
+        }
+        .container {
+            width: 96%;
+            max-width: 1480px;
+            margin: 5px auto 0;
+            padding: 0 0 55px 0;
+            .splide {
+                .splide__track {
+                    .splide__list {
+                        .splide__slide {
+                            width: 50%;
+                            .thumb {
+                                line-height: 0;
+                                width: 100%;
+                                height: 300px;
+                                img {
+                                    object-fit: cover;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            .text {
+                                padding: 30px 30px 30px 30px;
+                                .category {
+                                    p {
+                                        letter-spacing: 4px;
+                                        font-size: 5vw;
+                                    }
+                                }
+                                h3 {
+                                    .catch {
+                                        font-size: 4.5vw;
+                                    }
+                                }
+                                h4 {
+                                    .catch {
+                                        font-size: 3.5vw;
+                                    }
+                                }
+                            }
+
+
+                            &.is-active {
+                                padding: 0 0 0 0;
+                            }
+                        }
+                    }
+                    .splide__progress__bar {
+                        height: 3px;
+                    }
+                }
+            }
+        }
+    }
+} /* 767px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+

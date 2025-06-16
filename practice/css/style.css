@@ -1,0 +1,405 @@
+@charset "UTF-8";
+/* 基本設定 */
+/*============================================
+	― 変数設定
+=============================================*/
+@font-face {
+  font-family: "Shippori Mincho";
+  src: url("../webfonts/Subset-ShipporiMincho-Medium.woff2") format("woff2"), url("../webfonts/Subset-ShipporiMincho-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Shippori Mincho";
+  src: url("../webfonts/Subset-ShipporiMincho-SemiBold.woff2") format("woff2"), url("../webfonts/Subset-ShipporiMincho-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cinzel";
+  src: url("../webfonts/Cinzel-Medium.woff2") format("woff2"), url("../webfonts/Cinzel-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cinzel";
+  src: url("../webfonts/Cinzel-SemiBold.woff2") format("woff2"), url("../webfonts/Cinzel-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 GLOBAL 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+/*============================================
+	― PC表示
+=============================================*/
+.pc-disblock {
+  display: block;
+}
+
+.pc-disline {
+  display: inline;
+}
+
+.pc-dislineblock {
+  display: inline-block;
+}
+
+.pc-none {
+  display: none;
+}
+
+.sp-disblock {
+  display: none;
+}
+
+.sp-disline {
+  display: none;
+}
+
+.sp-dislineblock {
+  display: none;
+}
+
+/*============================================
+      ― スマホ表示切り替え
+  =============================================*/
+@media screen and (max-width: 769px) {
+  .pc-disblock {
+    display: none;
+  }
+  .pc-disline {
+    display: none;
+  }
+  .pc-dislineblock {
+    display: none;
+  }
+  .sp-disblock {
+    display: block;
+  }
+  .sp-disline {
+    display: inline;
+  }
+  .sp-dislineblock {
+    display: inline-block;
+  }
+  .sp-none {
+    display: none;
+  }
+}
+body {
+  font-family: "Shippori Mincho";
+  letter-spacing: 1px;
+}
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+/* 1024px～1280px responsive-close
+
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+/* 768px～1023px responsive-closed */
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+/* 767px responsive-closed */
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+/* modules */
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 HEADER 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .header .container {
+    max-width: 1920px;
+    margin: 0 auto 0;
+  }
+  .header .container nav {
+    padding: 30px 2% 0 2%;
+  }
+  .header .container nav .logo {
+    line-height: 0;
+    width: 170px;
+  }
+  .header .container nav ul li {
+    margin: 0 20px 0 0;
+  }
+  .header .container nav ul li a {
+    letter-spacing: 2px;
+    font-size: 19px;
+    padding: 0 0 0 0;
+  }
+  .header .container nav ul li:last-child {
+    margin: 0 0 0 0;
+  }
+  .header .container nav h1 {
+    display: none;
+  }
+  .header .container .first-view {
+    margin: 20px 0 0 0;
+    padding: 0 0 0 3%;
+  }
+  .header .container .first-view .text {
+    width: calc(100% - 50vw);
+    padding: 50px 0 0 0;
+  }
+  .header .container .first-view .text h2 .catch {
+    line-height: 1.25;
+    letter-spacing: 5px;
+    font-size: 80px;
+  }
+  .header .container .first-view .text h1 .catch {
+    letter-spacing: 2px;
+    font-size: 28px;
+  }
+  .header .container .first-view .text ul {
+    margin: 30px 0 0 0;
+  }
+  .header .container .first-view .text ul li {
+    background-size: 19px auto;
+    font-size: 19px;
+    padding: 5px 20px 5px 30px;
+  }
+  .header .container .first-view .text .sentence {
+    margin: 10px 0 0 0;
+  }
+  .header .container .first-view .text .sentence p {
+    line-height: 2;
+    font-size: 17px;
+    padding: 10px 0 10px 0;
+  }
+  .header .container .first-view .splide {
+    position: relative;
+    width: 50vw;
+  }
+  .header .container .first-view .splide .splide__track .splide__list .splide__slide .thumb {
+    right: -5vw;
+    top: 0;
+    width: 50vw;
+    height: 50vw;
+  }
+  .header .container .first-view .splide .splide__track .splide__list .splide__slide .thumb img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .header .container .first-view .splide .splide__track .splide__list .splide__slide.is-active .thumb img {
+    transform: scale(1.15);
+    transition-delay: 0s;
+  }
+} /* 1024px～1280px responsive-close
+
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header .container {
+    max-width: 1920px;
+    margin: 0 auto 0;
+  }
+  .header .container nav {
+    padding: 30px 2% 0 2%;
+  }
+  .header .container nav .logo {
+    line-height: 0;
+    width: 170px;
+  }
+  .header .container nav ul {
+    display: none;
+  }
+  .header .container nav h1 {
+    display: block;
+  }
+  .header .container nav h1 .catch {
+    font-size: 17px;
+  }
+  .header .container .first-view {
+    margin: 20px 0 0 0;
+    padding: 0 0 0 3%;
+  }
+  .header .container .first-view .text {
+    width: calc(100% - 50vw);
+    padding: 50px 0 0 0;
+  }
+  .header .container .first-view .text h2 .catch {
+    line-height: 1.25;
+    letter-spacing: 5px;
+    font-size: 60px;
+  }
+  .header .container .first-view .text h1 .catch {
+    letter-spacing: 2px;
+    font-size: 26px;
+  }
+  .header .container .first-view .text ul {
+    width: 120%;
+    margin: 30px 0 0 0;
+  }
+  .header .container .first-view .text ul li {
+    background-size: 18px auto;
+    font-size: 18px;
+    padding: 5px 20px 5px 28px;
+  }
+  .header .container .first-view .text .sentence {
+    margin: 10px 0 0 0;
+  }
+  .header .container .first-view .text .sentence p {
+    line-height: 2;
+    font-size: 16px;
+    padding: 10px 0 10px 0;
+  }
+  .header .container .first-view .splide {
+    position: relative;
+    width: 50vw;
+  }
+  .header .container .first-view .splide .splide__track .splide__list .splide__slide .thumb {
+    right: -5vw;
+    top: 0;
+    width: 50vw;
+    height: 50vw;
+  }
+  .header .container .first-view .splide .splide__track .splide__list .splide__slide .thumb img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .header .container .first-view .splide .splide__track .splide__list .splide__slide.is-active .thumb img {
+    transform: scale(1.15);
+    transition-delay: 0s;
+  }
+} /* 768px～1023px responsive-closed */
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  .header .container {
+    max-width: 1920px;
+    margin: 0 auto 0;
+  }
+  .header .container nav {
+    padding: 20px 3% 0 3%;
+  }
+  .header .container nav .logo {
+    line-height: 0;
+    width: 35vw;
+  }
+  .header .container nav ul {
+    display: none;
+  }
+  .header .container nav h1 {
+    display: block;
+  }
+  .header .container nav h1 .catch {
+    line-height: 1.3;
+    font-size: 4vw;
+  }
+  .header .container .first-view {
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 0 0 0 0;
+  }
+  .header .container .first-view .text {
+    width: calc(100% - 0vw);
+    padding: 20px 4% 0 4%;
+  }
+  .header .container .first-view .text h2 .catch {
+    line-height: 1.25;
+    letter-spacing: 5px;
+    font-size: 12vw;
+  }
+  .header .container .first-view .text h1 .catch {
+    letter-spacing: 2px;
+    font-size: 6.5vw;
+  }
+  .header .container .first-view .text ul {
+    width: 120%;
+    margin: 30px 0 0 0;
+  }
+  .header .container .first-view .text ul li {
+    background-size: 4vw auto;
+    letter-spacing: 0;
+    font-size: 4.35vw;
+    padding: 5px 20px 5px 4.5vw;
+  }
+  .header .container .first-view .text .sentence {
+    margin: 10px 0 0 0;
+  }
+  .header .container .first-view .text .sentence p {
+    line-height: 2;
+    font-size: 4vw;
+    padding: 10px 0 10px 0;
+  }
+  .header .container .first-view .splide {
+    position: relative;
+    width: 90vw;
+    margin: 0 auto 0;
+  }
+  .header .container .first-view .splide .splide__track .splide__list .splide__slide .thumb {
+    right: 0;
+    top: 0;
+    width: 90vw;
+    height: 90vw;
+  }
+  .header .container .first-view .splide .splide__track .splide__list .splide__slide .thumb img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .header .container .first-view .splide .splide__track .splide__list .splide__slide.is-active .thumb img {
+    transform: scale(1.15);
+    transition-delay: 0s;
+  }
+} /* 767px responsive-closed */
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************//*# sourceMappingURL=style.css.map */

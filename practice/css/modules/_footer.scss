@@ -1,0 +1,263 @@
+@charset "utf-8";
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 FOOTER 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+
+
+
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .footer {
+        padding: 120px 0 60px 0;
+        .container {
+            max-width: 100%;
+            margin: 0 auto 0;
+            padding: 0 4% 0 4%;
+            .top {
+                .logo {
+                    width: 200px;
+                    margin: 0 auto 0;
+                }
+                nav {
+                    width: 100%;
+                    margin: 20px auto 0;
+                    ul {
+                        padding: 80px 0 0 0;
+                        li {
+                            padding: 8px 50px 0 0;
+                            &:before {
+                                right: 20px;
+                                top: 50%;
+                                transform: translate(0,-50%) rotate(45deg);
+                                width: 1px;
+                                height: 20px;
+                            }
+                            a {
+                                .en {
+                                    font-size: 24px;
+                                }
+                                .jp {
+                                    font-size: 16px;
+                                    padding: 0 0 0 5px;
+                                }
+                            }
+                            &:last-child {
+                                padding: 8px 0 0 0;
+                                &:before {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .privacy {
+                padding: 60px 0 20px 0;
+                p {
+                    a {
+                        letter-spacing: 10px;
+                        font-size: 16px;
+
+                        &::before {
+                            left: -20px;
+                            top: 50%;
+                            transform: translate(0,-50%);
+                            border-width: 4px 0 4px 8px;
+                        }
+                    }
+                }
+            }
+            .copyright {
+                padding: 25px 0 0 0;
+                small {
+                    letter-spacing: 3px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+} /* 1024px～1280px responsive-close */
+
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .footer {
+        padding: 120px 0 60px 0;
+        .container {
+            max-width: 100%;
+            margin: 0 auto 0;
+            padding: 0 2.5% 0 2.5%;
+            .top {
+                .logo {
+                    width: 200px;
+                    margin: 0 auto 0;
+                }
+                nav {
+                    width: 100%;
+                    margin: 20px auto 0;
+                    ul {
+                        padding: 80px 0 0 0;
+                        li {
+                            padding: 8px 50px 0 0;
+                            &:before {
+                                right: 20px;
+                                top: 50%;
+                                transform: translate(0,-50%) rotate(45deg);
+                                width: 1px;
+                                height: 20px;
+                            }
+                            a {
+                                .en {
+                                    font-size: 24px;
+                                }
+                                .jp {
+                                    font-size: 16px;
+                                    padding: 0 0 0 5px;
+                                }
+                            }
+                            &:last-child {
+                                padding: 8px 0 0 0;
+                                &:before {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .privacy {
+                padding: 60px 0 20px 0;
+                p {
+                    a {
+                        letter-spacing: 10px;
+                        font-size: 16px;
+
+                        &::before {
+                            left: -20px;
+                            top: 50%;
+                            transform: translate(0,-50%);
+                            border-width: 4px 0 4px 8px;
+                        }
+                    }
+                }
+            }
+            .copyright {
+                padding: 25px 0 0 0;
+                small {
+                    letter-spacing: 2px;
+                    font-size: 13px;
+                    .sp-disblock {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+} /* 768px～1023px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+    .footer {
+        padding: 120px 0 60px 0;
+        .container {
+            max-width: 100%;
+            margin: 0 auto 0;
+            padding: 0 2.5% 0 2.5%;
+            .top {
+                .logo {
+                    width: 200px;
+                    margin: 0 auto 0;
+                }
+                nav {
+                    width: 100%;
+                    margin: 20px auto 0;
+                    ul {
+                        display: block;
+                        padding: 80px 0 0 0;
+                        li {
+                            border-top: solid 1px #aaaaaa;
+                            padding: 12px 0 12px 0;
+                            &:before {
+                                display: none;
+                            }
+                            a {
+                                .en {
+                                    font-size: 6vw;
+                                }
+                                .jp {
+                                    font-size: 3.75vw;
+                                    padding: 0 0 0 5px;
+                                }
+                            }
+                            &:last-child {
+                                border-bottom: solid 1px #aaaaaa;
+                                padding: 12px 0 12px 0;
+                                &:before {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .privacy {
+                padding: 60px 0 20px 0;
+                p {
+                    a {
+                        letter-spacing: 6px;
+                        font-size: 4vw;
+
+                        &::before {
+                            left: -4vw;
+                            top: 50%;
+                            transform: translate(0,-50%);
+                            border-width: 1.4vw 0 1.4vw 2.8vw;
+                        }
+                    }
+                }
+            }
+            .copyright {
+                padding: 25px 0 0 0;
+                small {
+                    line-height: 1.35;
+                    letter-spacing: 2px;
+                    font-size: 2.95vw;
+                }
+            }
+        }
+    }
+} /* 767px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
