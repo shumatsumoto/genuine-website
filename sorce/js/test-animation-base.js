@@ -45,4 +45,22 @@ headerAnimation
     rotationX: 0,
     stagger: 0.025,
     ease: "power2.out",
-  });
+  })
+  .to(".header .first-view .text ul li", {
+    autoAlpha: 1,
+    y: 0,
+    stagger: 0.06,
+  })
+  .from(".header .first-view .text .sentence", {
+    autoAlpha: 0,
+    y: 100,
+  })
+  .from(
+    ".header .first-view .splide",
+    {
+      autoAlpha: 0,
+      y: 200,
+      x: 200,
+    },
+    "<"
+  );
