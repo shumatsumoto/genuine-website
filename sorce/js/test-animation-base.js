@@ -159,3 +159,26 @@ worksAnimation
     },
     "<=1"
   );
+
+// .featureアニメーション
+
+const featureTitleAnimation = gsap.timeline({
+  defaults: {
+    autoAlpha: 0,
+    filter: "blur(30px)",
+    x: -100,
+    y: 100,
+    duration: 0.75,
+  },
+  scrollTrigger: {
+    trigger: ".feature",
+    start: "top 45%",
+  },
+});
+
+featureTitleAnimation
+  .from(".feature .container .title .text h3", {
+    duration: 1.0,
+  })
+  .from(".feature .container .title .text h2", {}, "<=0.25")
+  .from(".feature .container .title .thumb", { x: 100 }, "<=0.5");
