@@ -272,3 +272,33 @@ meritBoxes.forEach((target) => {
       "<=0.25"
     );
 });
+
+// .flowアニメーション
+const flowTitleAnimation = gsap.timeline({
+  defaults: {
+    autoAlpha: 0,
+    filter: "blur(30px)",
+    scale: 2,
+    duration: 1.15,
+  },
+  scrollTrigger: {
+    trigger: ".flow .title",
+    start: "top 55%",
+  },
+});
+
+flowTitleAnimation
+  .from(".flow .container .title h3", {})
+  .from(".flow .container .title h2", {}, "<");
+
+gsap.from(".flow .container .box-wrapper .box", {
+  autoAlpha: 0,
+  y: 100,
+  filter: "blur(30px)",
+  stagger: 0.3,
+  duration: 0.7,
+  scrollTrigger: {
+    trigger: ".flow .container .box-wrapper",
+    start: "top 60%",
+  },
+});
