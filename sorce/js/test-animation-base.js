@@ -215,3 +215,60 @@ featureBoxes.forEach((target) => {
     .from(geometory, { x: 100 }, "<")
     .from(sentence, { x: 100 }, "<");
 });
+
+// .meritアニメーション
+const meritTitleAnimation = gsap.timeline({
+  defaults: {
+    autoAlpha: 0,
+    filter: "blur(30px)",
+    scale: 2,
+    duration: 1.15,
+  },
+  scrollTrigger: {
+    trigger: ".merit .title",
+    start: "top 50%",
+    // markers: true,
+  },
+});
+
+meritTitleAnimation
+  .from(".merit .container .title h3", {})
+  .from(".merit .container .title h2", {});
+
+const meritBoxes = gsap.utils.toArray(".merit .container .box-wrapper .box");
+
+meritBoxes.forEach((target) => {
+  const thumbElements = target.querySelectorAll(".thumb-wrapper .thumb");
+  const textElements = target.querySelectorAll(
+    ".text .back, .text .inset .semi-title .number, .text .inset .semi-title h3, .text .inset .sentence"
+  );
+
+  const meritBoxAnimation = gsap.timeline({
+    defaults: {
+      autoAlpha: 0,
+      filter: "blur(30px)",
+      x: -100,
+      y: 100,
+      duration: 0.75,
+    },
+    scrollTrigger: {
+      trigger: target,
+      start: "top 45%",
+      markers: true,
+    },
+  });
+
+  meritBoxAnimation
+    .from(thumbElements, {
+      x: (i) => (i % 2 === 0 ? -100 : 100),
+      stagger: 0.1,
+      duration: 1.0,
+    })
+    .from(
+      textElements,
+      {
+        stagger: 0.1,
+      },
+      "<=0.25"
+    );
+});
