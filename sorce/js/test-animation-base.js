@@ -182,3 +182,36 @@ featureTitleAnimation
   })
   .from(".feature .container .title .text h2", {}, "<=0.25")
   .from(".feature .container .title .thumb", { x: 100 }, "<=0.5");
+
+featureBoxes = gsap.utils.toArray(".feature .container .box-wrapper .box");
+
+featureBoxes.forEach((target) => {
+  const thumb = target.querySelector(".top .thumb");
+  const textElements = target.querySelectorAll(".top .text .en, .top .text h3");
+  const textLi = target.querySelectorAll(".top .text ul li");
+  const geometory = target.querySelector(".top .text .geometory");
+  const sentence = target.querySelector(".bottom .sentence");
+
+  const featureBoxAnimation = gsap.timeline({
+    defaults: {
+      autoAlpha: 0,
+      filter: "blur(30px)",
+      x: -100,
+      y: 100,
+      duration: 0.75,
+    },
+    scrollTrigger: {
+      trigger: target,
+      start: "top 45%",
+    },
+  });
+
+  featureBoxAnimation
+    .from(thumb, {
+      duration: 1.0,
+    })
+    .from(textElements, {}, "<=0.25")
+    .from(textLi, { x: 100, stagger: 0.1 }, "-=0.5")
+    .from(geometory, { x: 100 }, "<")
+    .from(sentence, { x: 100 }, "<");
+});
