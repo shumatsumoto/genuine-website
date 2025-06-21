@@ -302,3 +302,40 @@ gsap.from(".flow .container .box-wrapper .box", {
     start: "top 60%",
   },
 });
+
+// .ctaアニメーション
+const ctaElements = gsap.utils.toArray(".cta");
+
+ctaElements.forEach((target) => {
+  const inner = target.querySelector(".cta .container .inner");
+  const h2 = target.querySelector(".cta .container h2");
+  const sentence = target.querySelector(
+    ".cta .container .inner .block .sentence"
+  );
+  const blockLi = target.querySelectorAll(
+    ".cta .container .inner .block ul li"
+  );
+  const blockForm = target.querySelectorAll(
+    ".cta .container .inner .block .form"
+  );
+
+  const ctaAnimation = gsap.timeline({
+    defaults: {
+      autoAlpha: 0,
+      filter: "blur(30px)",
+      y: 100,
+      duration: 0.75,
+    },
+    scrollTrigger: {
+      trigger: target,
+      start: "top 50%",
+    },
+  });
+
+  ctaAnimation
+    .from(inner, { filter: "blur(60px)", duration: 1.5 })
+    .from(h2, { x: -100, duration: 1.0 }, "-=.5")
+    .from(sentence, { x: -100 }, "<=.25")
+    .from(blockLi, { x: 100, stagger: 0.1 }, "-=.5")
+    .from(blockForm, { x: 100 }, "<");
+});
