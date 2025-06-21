@@ -339,3 +339,56 @@ ctaElements.forEach((target) => {
     .from(blockLi, { x: 100, stagger: 0.1 }, "-=.5")
     .from(blockForm, { x: 100 }, "<");
 });
+
+// .footerアニメーション
+const footer = document.querySelector(".footer");
+const footerLogoPlane = document.querySelector(".footer .logo .plane");
+const footerLogoWhite = document.querySelector(".footer .logo .white");
+const footerLinks = document.querySelectorAll(
+  ".container .top nav ul li a, .container .privacy p a, .container .copyright small"
+);
+
+gsap.set(footer, {
+  backgroundImage:
+    "linear-gradient(90deg, rgba(210, 210, 210, 1) 0%, rgba(210, 210, 210, 1) 100%)",
+});
+gsap.set(footerLinks, {
+  color: "#111",
+});
+gsap.set(footerLogoWhite, { autoAlpha: 0 });
+
+const footerAnimation = gsap.timeline({
+  scrollTrigger: {
+    trigger: footer,
+    start: "top 45%",
+  },
+});
+
+footerAnimation
+  .to(footer, {
+    backgroundImage:
+      "linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%)",
+    duration: 1.25,
+  })
+  .to(
+    footerLogoPlane,
+    {
+      autoAlpha: 0,
+    },
+    "<"
+  )
+  .to(
+    footerLogoWhite,
+    {
+      autoAlpha: 1,
+    },
+    "<"
+  )
+  .to(
+    footerLinks,
+    {
+      color: "#fff",
+      stagger: 0.15,
+    },
+    "<=.5"
+  );
